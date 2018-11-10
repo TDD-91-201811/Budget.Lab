@@ -19,9 +19,9 @@ namespace BudgetTest
 
             if (data != null)
             {
-                double onedayAmount = data.Amount / DateTime.DaysInMonth(start.Year, start.Month);
+                double oneDayAmount = data.Amount / DateTime.DaysInMonth(start.Year, start.Month);
                 var totalDay = end.Day - start.Day + 1;
-                return onedayAmount * totalDay;
+                return oneDayAmount * totalDay;
             }
             return 0;
         }
